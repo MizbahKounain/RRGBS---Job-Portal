@@ -18,9 +18,9 @@ The platform provides:
 
 ---
 
-## 🚀 Features
+## Features
 
-### 🏠 Main Website
+### Main Website
 
 - Professional RRGBS landing page
 - Company information
@@ -30,7 +30,7 @@ The platform provides:
 - Responsive navigation
 - Smooth page transitions and animations
 
-### 💼 Jobs Portal
+### Jobs Portal
 
 - Search and browse jobs
 - Search by:
@@ -50,7 +50,7 @@ The platform provides:
 - Resume download
 - Protected recruiter functionality
 
-### 🔐 Authentication
+### Authentication
 
 - Candidate registration
 - Recruiter registration
@@ -62,7 +62,7 @@ The platform provides:
 - Password reset using email verification code
 - Protected API routes
 
-### 🏢 Recruiter Features
+### Recruiter Features
 
 Recruiters can:
 
@@ -75,7 +75,7 @@ Recruiters can:
 
 Candidates cannot create job postings.
 
-### 🎨 UI & Animations
+### UI & Animations
 
 - Responsive design
 - Jobs portal hero animations
@@ -87,7 +87,7 @@ Candidates cannot create job postings.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
