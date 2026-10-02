@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@keyframes rrgbsLogoSwing {
+  0% { transform: translateX(0) rotate(0deg); }
+  15% { transform: translateX(-12px) rotate(-4deg); }
+  35% { transform: translateX(16px) rotate(4deg); }
+  55% { transform: translateX(-10px) rotate(-3deg); }
+  75% { transform: translateX(7px) rotate(2deg); }
+  100% { transform: translateX(0) rotate(0deg); }
+}
+
+.rrgbs-logo-swing {
+  animation: rrgbsLogoSwing 2.4s cubic-bezier(.22,.61,.36,1) both;
+  transform-origin: center center;
+}
+
+.rrgbs-logo-hover-swing:hover {
+  animation: rrgbsLogoSwing 2.6s cubic-bezier(.22,.61,.36,1) both;
+  transform-origin: center center;
+}
+
+@keyframes rrgbsCursorBlink {
+  0%, 45% { opacity: 1; }
+  46%, 100% { opacity: 0; }
+}
+
+.rrgbs-type-cursor {
+  animation: rrgbsCursorBlink .9s steps(1, end) infinite;
+}
+
+@keyframes rrgbsFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-14px) rotate(2deg); }
+}
+
+.rrgbs-float {
+  animation: rrgbsFloat 7s ease-in-out infinite;
+}
+
+@keyframes rrgbsGlowPulse {
+  0%, 100% { opacity: .32; transform: scale(1); }
+  50% { opacity: .48; transform: scale(1.04); }
+}
+
+.rrgbs-glow-pulse {
+  animation: rrgbsGlowPulse 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rrgbs-logo-swing,
+  .rrgbs-logo-hover-swing:hover,
+  .rrgbs-type-cursor,
+  .rrgbs-float,
+  .rrgbs-glow-pulse {
+    animation: none !important;
+  }
+}
+
+
+.rrgbs-reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity .8s ease, transform .8s cubic-bezier(.22,.61,.36,1);
+}
+
+.rrgbs-reveal.rrgbs-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rrgbs-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+
+@keyframes rrgbsPortalEnter {
+  from { opacity: 0; transform: translateY(14px) scale(.995); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.rrgbs-portal-transition {
+  animation: rrgbsPortalEnter .48s cubic-bezier(.22,.61,.36,1) both;
+  transform-origin: top center;
+}
+
+@keyframes rrgbsSectionEnter {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.rrgbs-section-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .7s ease, transform .7s cubic-bezier(.22,.61,.36,1);
+}
+
+.rrgbs-section-reveal.rrgbs-section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.rrgbs-section-reveal:nth-child(2) { transition-delay: .05s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .rrgbs-portal-transition,
+  .rrgbs-section-reveal,
+  .rrgbs-section-reveal.rrgbs-section-visible {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+    transition: none !important;
+  }
+}
