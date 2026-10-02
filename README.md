@@ -1,25 +1,143 @@
-# RRGBS Full-Stack v14
+# RRGBS – Reliable People, Professional Services
 
-## Run
+RRGBS (RR Group of Business Solutions) is a full-stack web platform that brings together professional business services and a recruitment/job portal in one application.
 
-```powershell
-npm install
-Copy-Item .env.example .env
-npm run dev:all
-```
+The platform provides:
 
-Open http://localhost:3000
+- Business and workforce services
+- Job searching
+- Candidate registration and login
+- Recruiter registration and login
+- Job posting
+- Job applications
+- Resume uploads and downloads
+- Recruiter job management
+- Password reset functionality
+- Contact and enquiry forms
+- Responsive modern UI with animations
 
-## v12 fixes
-- Post a Job opens immediately as a modal; no scrolling required.
-- Recruiter verification opens immediately in the current Jobs page.
-- After recruiter verification, the job-posting form opens immediately in the same page.
-- Recruiter Portal opens immediately as a modal; no scrolling required.
-- Job-related fixed-position modals are rendered outside the animated portal transition wrapper so CSS transforms cannot push them to the bottom of the page.
-- Recruiters only see their own jobs in Recruiter Portal, with application counts and protected resume downloads.
+---
 
+## 🚀 Features
 
-## v14 fixes
-- Recruiter verification note now only says that the account password is required to confirm the recruiter.
-- After successful recruiter verification, the actual job-posting form opens immediately in the same Jobs page without changing portal or scroll position.
-- Login and registration always return to/stay on the Jobs portal and preserve the current Jobs scroll position.
+### 🏠 Main Website
+
+- Professional RRGBS landing page
+- Company information
+- Business services
+- Capabilities and industries
+- Contact/enquiry section
+- Responsive navigation
+- Smooth page transitions and animations
+
+### 💼 Jobs Portal
+
+- Search and browse jobs
+- Search by:
+  - Job title
+  - Skills
+  - Company
+  - Location
+  - Job type
+- Popular job categories
+- Candidate authentication
+- Recruiter authentication
+- Job posting
+- Job applications
+- Resume upload
+- Recruiter portal
+- Applicant count
+- Resume download
+- Protected recruiter functionality
+
+### 🔐 Authentication
+
+- Candidate registration
+- Recruiter registration
+- Login
+- Logout
+- JWT-based authentication
+- Password hashing
+- Forgot password
+- Password reset using email verification code
+- Protected API routes
+
+### 🏢 Recruiter Features
+
+Recruiters can:
+
+- Complete recruiter verification
+- Create job postings
+- View their own posted jobs
+- See applicant counts
+- View applicants
+- Download candidate resumes
+
+Candidates cannot create job postings.
+
+### 🎨 UI & Animations
+
+- Responsive design
+- Jobs portal hero animations
+- Services portal hero animations
+- Page transition animations
+- Section reveal animations
+- Button and card interactions
+- Reduced-motion accessibility support
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide Icons
+
+### Backend
+
+- Node.js
+- Express.js
+- JWT Authentication
+- bcrypt/password hashing
+- Nodemailer
+
+### Development
+
+- npm
+- TypeScript
+- Vite development server
+
+---
+
+## 📁 Project Structure
+
+```text
+RRGBS/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── api.ts
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── ...
+│
+├── server/
+│   ├── storage/
+│   ├── uploads/
+│   └── ...
+│
+├── scripts/
+│
+├── .env.example
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
